@@ -79,4 +79,6 @@ const Book = ({ image, title, author, stars, price }) => {
   );
 };
 
+// cara ketiga, pakai function, bukan jadi var/ const
+
 ReactDOM.render(<BookList />, document.getElementById("root"));

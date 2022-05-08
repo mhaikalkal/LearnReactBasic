@@ -24,6 +24,9 @@ const secondBook = {
   price: "$11.00",
 };
 
+// Book ini menerima props.
+// title, image, dll merupakan sebuah nama props.
+// bisa aja kita kasih nama yg lain. misal: gorengan. nanti diambilnya pake cara props.gorengan
 function BookList() {
   return (
     <section className="booklist">

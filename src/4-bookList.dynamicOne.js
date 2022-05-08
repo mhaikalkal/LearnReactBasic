@@ -30,9 +30,11 @@ const books = [
   },
 ];
 
+// buku ini sebagai property. isinya dari data/json book dari array books
+// buku ini akan ditangkap oleh const Book, lokasinya ada di dalam props.
+// maka pemanggilannya nanti props.buku -- jika ingin ambil image maka: props.buku.image
+
 function BookList() {
-  // buku ini sebagai property, isinya book dari books.map()
-  // jadi si {book} ini merupakan props yang bakal dikirim ke const Book = (props)
   return (
     <section className="booklist">
       {books.map((book) => {
@@ -41,7 +43,11 @@ function BookList() {
     </section>
   );
 }
+// untuk id sebenernya bisa juga kita kirim ke const Book.
+// tapi untuk contoh, kita coba buat 2 property di BookListnya.
 
+// oleh karena itu kita define dulu ke props.buku
+// biar bisa langsung kita ambil isi props-nya
 const Book = (props) => {
   const { image, title, author, stars, price } = props.buku;
   console.log(props);

@@ -21,6 +21,8 @@ function BookList() {
   );
 }
 
+// ini yang dipake di BookList diatas,
+// coba dalem 1 file dulu
 const Book = () => {
   return (
     <article className="book">
